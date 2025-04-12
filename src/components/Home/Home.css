@@ -1,0 +1,102 @@
+#home {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh; /* Fixed excessive height */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+/* Left Section */
+.lefthome {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Right Section */
+.righthome {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.righthome img {
+    width: 40%;
+    position: relative; /* Changed from absolute */
+    top: 0;
+    filter: drop-shadow(2px 2px 3px white);
+}
+
+/* Text Details */
+.homedetails {
+    font-size: 2vmax;
+    padding: 20px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+.line1 {
+    font-size: 1em;
+}
+
+.line3 {
+    font-weight: 500;
+}
+
+.line2 {
+    font-size: 1.6em;
+    background: linear-gradient(to right, rgb(66,180,205), white);
+    background-clip: text;
+    font-weight: 700;
+    color: transparent;
+}
+
+/* Button Styling */
+.homedetails button {
+    padding: 20px 70px;
+    background-color: rgb(66,180,205);
+    color: black; 
+    border: 2px solid rgb(66,180,205);
+    margin-top: 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.homedetails button:hover {
+    background-color: transparent;
+    color: rgb(66,180,205);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+/* Responsive for Mobile Screens */
+@media (max-width: 750px) {
+    #home {
+        flex-direction: column-reverse;
+        /* align-items: center;
+        text-align: center; */
+    }
+    
+    .lefthome, .righthome {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .righthome img {
+        width: 60%; /* Adjusted for better mobile appearance */
+        margin-top: 20px; /* Space between text and image */
+        position: static; /* Fix alignment issue */
+    }
+}

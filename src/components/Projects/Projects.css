@@ -1,0 +1,43 @@
+#projects{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.slider{
+    width: 90%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    padding: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 30px;
+    scrollbar-width: none;
+
+}
+.slider video {
+    opacity: 1; /* Fully visible */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+#projects #para{
+    font-size: 4vmax;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(209, 13, 91), white);
+    background-clip: text;
+    color: transparent;
+}

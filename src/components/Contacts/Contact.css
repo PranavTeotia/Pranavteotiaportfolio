@@ -1,0 +1,93 @@
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(17,20,23);  /* Black overlay with 70% opacity */
+    z-index: -1;
+}
+
+#contact img {
+    width: 100%;
+    height: 110%;
+    object-fit: contain;
+    object-position: top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background: rgba(255, 255, 255, 0.01); /* Transparent white */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px); /* Glassmorphism effect */
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.contact-form h2 {
+    color: rgb(255, 255, 255);
+    font-size: 3vmax;
+    text-shadow: 3px 2px 2px 2px rgb(5, 38, 54);
+    margin-bottom: 5px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: white;
+    font-weight: 600; /* Changed placeholder color to black */
+}
+
+
+.contact-form button, .social-buttons a {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #4ec5dc;
+    color: white;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 2px .8px #49bbd2;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.contact-form button:hover, .social-buttons a:hover {
+    background: rgba(117, 216, 52, 0.717);
+    box-shadow: 2px 2px 2px .8px  rgba(112, 207, 48, 0.717);
+}
