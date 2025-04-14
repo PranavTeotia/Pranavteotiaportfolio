@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Shikhachaudhary00.github.io/shikha-chaudhary-portfolio",
+  "homepage": "https://PranavTeotia.github.io/<repo-name>",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",

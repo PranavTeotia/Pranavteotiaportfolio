@@ -32,6 +32,7 @@ function Nav() {
             <Link to="home" smooth={true} spy={true}  duration={800} activeClass='active' ><li>Home</li></Link>
             <Link to="about"  smooth={true}   spy={true} duration={900} activeClass='active'><li>About</li></Link>
             <Link to='projects'  smooth={true}  spy={true} duration={600} activeClass='active'><li>Projects</li></Link>
+            <Link to='certificates'  smooth={true}  spy={true} duration={600} activeClass='active'><li>Certificates</li></Link>
             <Link to='contact'  smooth={true}  spy={true} duration={600} activeClass='active'><li>Contact</li></Link>
             </ul>
             <div className="hamburger" ref={menu} 
