@@ -44,15 +44,18 @@ function Projects() {
         <div id="projects">
             <h1 id="para">DEVELOPMENT SHOWCASE</h1>
             <div className="slider">
+                <Cards title="VIDEOCONFERENCINGAPP USING SPRINGBOOT" />
+
                 <Cards title="CraveCart- Food Delivery Website" video={foodvideo} videoRef={(el) => videoRefs.current[0] = el} />
                 <Cards title="PORTFOLIO WEBSITE" video={portfolio} />
                 <Cards title="MOVIES-BOX"  video={Movies} videoRef={(el) => videoRefs.current[7] = el} />
                 <Cards title="ANIMATED WEBSITE" video={animated} videoRef={(el) => videoRefs.current[1] = el} />
-                <Cards title="IMAGE GENERATOR USING API" video={img} videoRef={(el) => videoRefs.current[2] = el} />
             </div>
             <div className="slider">
                 <Cards title="MYNTRA CLONE" video={myntra} videoRef={(el) => videoRefs.current[3] = el} />
                 <Cards title="TODO-LIST USING REACTJS" video={todo} videoRef={(el) => videoRefs.current[4] = el} />
+                <Cards title="IMAGE GENERATOR USING API" video={img} videoRef={(el) => videoRefs.current[2] = el} />
+
                 <Cards title="HOME-HIVE USING REACTJS" video={homehive} videoRef={(el) => videoRefs.current[5] = el} />
                 <Cards title="SPOTIFY CLONE USING REACTJS" video={spotify} videoRef={(el) => videoRefs.current[6] = el} />
 

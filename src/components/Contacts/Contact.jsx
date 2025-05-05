@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Contact() {
-    const [state, handleSubmit] = useForm("mkgjvpgz");
+    const [state, handleSubmit] = useForm("manoonrb");
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     
     const handleChange = (e) => {
@@ -15,7 +15,7 @@ function Contact() {
 
     const customSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch("https://formspree.io/f/mkgjvpgz", {
+        const response = await fetch("https://formspree.io/f/manoonrb", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
